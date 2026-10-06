@@ -1,6 +1,6 @@
 # 准备 GitHub 版本
 
-本地公开文件、中英文 README 和对应的矢量图已准备完成。尚未关联 GitHub 远程仓库；确定目标仓库后，可按下列步骤上传代码与公开索引。GitHub 默认展示英文 `README.md`，中文版本为 `README.zh-CN.md`。
+项目远程仓库为 [SolidifyTime/jev-customer-policy-verifier](https://github.com/SolidifyTime/jev-customer-policy-verifier)。本地公开文件、中英文 README 和对应的矢量图已准备完成；可按下列步骤上传代码与公开索引。GitHub 默认展示英文 `README.md`，中文版本为 `README.zh-CN.md`。
 
 ## 提交范围
 
@@ -51,18 +51,18 @@ python3 scripts/cpv.py --help
 .venv/bin/python -m unittest discover -s tests -v
 ```
 
-当前 **108 项回归测试**已在独立 Mac arm64 CPU / Python 3.12 / PyTorch 2.6.0 / LLaMA-Factory 0.9.5 环境全部通过，无跳过；它们使用临时 fixture 和本地随机小模型，涵盖 SemIf Direct 输入、原生 logits、全参数训练、ModelScope 当前分支下载与必要文件检查，以及梯度累积、完整三轮样本覆盖、跨轮中断续训、TensorBoard 日志读回、safetensors 保存/重载和原生导出。需先安装固定训练依赖才能执行全部数值测试。AutoDL GPU 尚未实际运行。`train check` 和来源重建命令需要另行准备相应数据，这与运行离线测试不同。核对完成后创建本地提交：
+本次上传前，本地运行 **126 项测试**：**106 项通过，20 项因缺少训练依赖跳过**。GitHub CI 会安装固定的 CPU 训练依赖，再运行完整离线测试。正式 AutoDL GPU 训练及独立评测已经完成，结果见 [最终评测报告](../reports/case-neutral-1epoch-results-20261004.md)。`train check` 和来源重建命令需要另行准备相应数据，这与运行离线测试不同。核对完成后创建本地提交：
 
 ```sh
 git commit -m "Organize customer policy verifier project"
 ```
 
-## 确定远程仓库后上传
+## 连接远程仓库并上传
 
-在 GitHub 创建空仓库，先不让 GitHub生成 README 或其他初始文件。根据实际仓库地址配置远程；下面的地址需替换，不能原样执行：
+本项目的 GitHub 仓库已创建。若当前 checkout 尚未配置 `origin`，使用下列地址添加远程；已有 `origin` 时先核对地址，再执行推送：
 
 ```sh
-git remote add origin https://github.com/YOUR_ACCOUNT/YOUR_REPOSITORY.git
+git remote add origin https://github.com/SolidifyTime/jev-customer-policy-verifier.git
 git branch -M main
 git push -u origin main
 ```

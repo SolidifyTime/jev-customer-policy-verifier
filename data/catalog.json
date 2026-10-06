@@ -1,0 +1,312 @@
+{
+  "schema": "cpv-data-catalog-v1",
+  "snapshot_date": "2026-10-03",
+  "paths_relative_to": "project root",
+  "artifacts_committed_to_git": false,
+  "canonical_source": "data/source/task2/raw/test_task2_en_f1.json",
+  "training_bundle": "data/training/task2-v1",
+  "model_input_fields": [
+    "policy",
+    "conversation",
+    "candidate_response"
+  ],
+  "label_to_id": {
+    "compliant": 0,
+    "violating": 1
+  },
+  "frozen_split": {
+    "group_key": "orig_conv_id",
+    "seed": 20261002,
+    "groups": {
+      "train": 299,
+      "validation": 100,
+      "test": 99
+    }
+  },
+  "files": [
+    {
+      "path": "data/archive/pilot-source/raw/test_task2_en_f1.json",
+      "role": "早期试验使用的来源副本；正式来源已集中到data/source/task2",
+      "bytes": 4038868,
+      "sha256": "5e5402bafdae2ed2c63d6688e161c9e4af8028f596da30dd26b33a3544846b17"
+    },
+    {
+      "path": "data/archive/pilot-source/splits/en_f1_seed_20261002.json",
+      "role": "早期试验使用的来源副本；正式来源已集中到data/source/task2",
+      "bytes": 11472,
+      "sha256": "da42c0cbe78ff8bcf4662b6da73eea7c1a8c98bfe44dcda2d722f8b963822dcf"
+    },
+    {
+      "path": "data/archive/reviews/manual-review-20261002/accepted_variants.jsonl",
+      "role": "早期人工审核接受的15条变体；未追加到当前训练集",
+      "bytes": 39910,
+      "sha256": "a18439d7e4cc7f786f9bbdf926c51645ee7131bd80c9f56900f6e3417599788e",
+      "records": 15
+    },
+    {
+      "path": "data/archive/reviews/manual-review-20261002/baseline_exclusions.jsonl",
+      "role": "两条存疑原始标签的训练排除清单；当前构建使用此文件",
+      "bytes": 923,
+      "sha256": "0b5e1e3f446f055fce1c829ff88576bd231cb5b28d2174da21846b84c78515b6",
+      "records": 2
+    },
+    {
+      "path": "data/archive/reviews/manual-review-20261002/decisions.json",
+      "role": "早期逐条审核结构化结论",
+      "bytes": 22623,
+      "sha256": "b96903d095cae119bb524926c2da0e45d50ad5a8869519029e76b64c2d8f07b4"
+    },
+    {
+      "path": "data/archive/reviews/manual-review-20261002/review_snapshot.md",
+      "role": "早期人工审核工作表冻结快照",
+      "bytes": 119464,
+      "sha256": "6d58c71fea0ee96b7787f3eddb8207d49e9f5a59d25e2cb9cf9186a369eb0efb"
+    },
+    {
+      "path": "data/archive/reviews/manual-review-20261002/source_audit.jsonl",
+      "role": "早期来源标签审核结果",
+      "bytes": 8240,
+      "sha256": "2d8adb2cbbfb921269a9f97b99c97cf51e08f8aa8ca9abdd81074f7c61fdf312",
+      "records": 15
+    },
+    {
+      "path": "data/archive/reviews/manual-review-20261002/summary.json",
+      "role": "该批次数量、排除项与审核状态汇总",
+      "bytes": 1902,
+      "sha256": "e83152e1c979a0e569537c347832e1b0ddae9a7e2428dc60d563ee47ef7226bb"
+    },
+    {
+      "path": "data/archive/reviews/spot-check-20261002/candidates.jsonl",
+      "role": "程序筛选后的合成候选，尚不能理解为全部人工审核通过；早期11条批次，未追加到当前训练集",
+      "bytes": 25913,
+      "sha256": "e0517045352be6447da7c61f99875941373ad9ae0839a392bd91fe6fc04d7e91",
+      "records": 11
+    },
+    {
+      "path": "data/archive/reviews/spot-check-20261002/manifest.json",
+      "role": "来源、版本、划分和文件哈希；用于复现与完整性检查；早期11条批次，未追加到当前训练集",
+      "bytes": 5386,
+      "sha256": "8b5c27885c3ec243afc84c659289afc03864029e22474a467fc26aca832bb514"
+    },
+    {
+      "path": "data/archive/reviews/spot-check-20261002/spot_check.md",
+      "role": "抽检工作表；早期11条批次，未追加到当前训练集",
+      "bytes": 7462,
+      "sha256": "e0e1ac3c30ad609216c88c8dde5ba7ed83c688902c74867528d863ca7169105d"
+    },
+    {
+      "path": "data/archive/reviews/spot-check-20261002/spot_check_results.json",
+      "role": "抽检结论；当前全量批次为助手抽检3条；早期11条批次，未追加到当前训练集",
+      "bytes": 1007,
+      "sha256": "cb38ebf6176ca8fd3307d6324bdc7cbfcf76c3a6988a676090c97d1f9ac12ac1"
+    },
+    {
+      "path": "data/archive/reviews/spot-check-20261002/spot_check_snapshot.md",
+      "role": "冻结抽检工作表快照；早期11条批次，未追加到当前训练集",
+      "bytes": 7462,
+      "sha256": "e0e1ac3c30ad609216c88c8dde5ba7ed83c688902c74867528d863ca7169105d"
+    },
+    {
+      "path": "data/archive/reviews/spot-check-20261002/summary.json",
+      "role": "该批次数量、排除项与审核状态汇总；早期11条批次，未追加到当前训练集",
+      "bytes": 948,
+      "sha256": "941e9a40540aa8a6b0f3a92e27c9a5ec82b7722d82ba8738e0d548e035659de7"
+    },
+    {
+      "path": "data/archive/reviews/spot-check-20261002/training_variants.jsonl",
+      "role": "带来源与审核状态的合成训练变体；早期11条批次，未追加到当前训练集",
+      "bytes": 28354,
+      "sha256": "e14f7162b7792d9f5a0de4d04de459b392c07a0100de0df482b7946c770baefd",
+      "records": 11
+    },
+    {
+      "path": "data/derived/bulk-openrouter-20261003-v3/candidates.jsonl",
+      "role": "程序筛选后的合成候选，尚不能理解为全部人工审核通过",
+      "bytes": 12857311,
+      "sha256": "089d6ac41ec31ac363a08098ee6a0f6aa1dc8cf5d4adca11fce2316ab528b043",
+      "records": 4785
+    },
+    {
+      "path": "data/derived/bulk-openrouter-20261003-v3/manifest.json",
+      "role": "来源、版本、划分和文件哈希；用于复现与完整性检查",
+      "bytes": 6609,
+      "sha256": "f28cb9222e7b7eaca7d53365d86023339439c1a89a52c75ffebbd1ebec7240ee"
+    },
+    {
+      "path": "data/derived/bulk-openrouter-20261003-v3/quality-check.json",
+      "role": "当前批次导出质量检查结果",
+      "bytes": 431,
+      "sha256": "4a66213fc750f7f2e3b54e6da4679befb7c5c142379671d6526707b3150404ae"
+    },
+    {
+      "path": "data/derived/bulk-openrouter-20261003-v3/spot_check.md",
+      "role": "抽检工作表",
+      "bytes": 9195,
+      "sha256": "9b9373524644c95f6455aa06554b6bf916564513be30e1367ec97f16b376a1d8"
+    },
+    {
+      "path": "data/derived/bulk-openrouter-20261003-v3/spot_check_results.json",
+      "role": "抽检结论；当前全量批次为助手抽检3条",
+      "bytes": 1252,
+      "sha256": "b082c45a88a61fa9212b4bbc4d948eabb5d75d9b780ec3c2970c9921ed7928c2"
+    },
+    {
+      "path": "data/derived/bulk-openrouter-20261003-v3/spot_check_snapshot.md",
+      "role": "冻结抽检工作表快照",
+      "bytes": 9195,
+      "sha256": "9b9373524644c95f6455aa06554b6bf916564513be30e1367ec97f16b376a1d8"
+    },
+    {
+      "path": "data/derived/bulk-openrouter-20261003-v3/summary.json",
+      "role": "该批次数量、排除项与审核状态汇总",
+      "bytes": 308317,
+      "sha256": "39f39437acee5b23cfea49aa5bff35cc7b6617282bcba3d0ca5a30a050963a22"
+    },
+    {
+      "path": "data/derived/bulk-openrouter-20261003-v3/training_variants.jsonl",
+      "role": "带来源与审核状态的合成训练变体",
+      "bytes": 13633385,
+      "sha256": "873ddb9084cf5d9144b723b02d1b6a1202c1f0eee69195a8c9398c72b9c603ed",
+      "records": 4785
+    },
+    {
+      "path": "data/source/task2/License",
+      "role": "上游数据发布所附许可证原文",
+      "bytes": 7590,
+      "sha256": "038ea79c737415a933a62ace42cae213828e7e211935c374310d9a7fcc2ef18a"
+    },
+    {
+      "path": "data/source/task2/README.md",
+      "role": "上游数据发布说明原文",
+      "bytes": 2013,
+      "sha256": "98e0e8135b1eba99c00527c580222b120a6bd0c846be6fc9a98a754c7ce0526d"
+    },
+    {
+      "path": "data/source/task2/generation_exclusions.json",
+      "role": "仅针对生成的排除清单；不等同于训练原始样本排除",
+      "bytes": 6969,
+      "sha256": "224f8a30910fc0f7e2d5481731c09e62ca819c73ebee1b871d2ec04bbe93dcd6"
+    },
+    {
+      "path": "data/source/task2/manifest.json",
+      "role": "来源、版本、划分和文件哈希；用于复现与完整性检查",
+      "bytes": 11857,
+      "sha256": "98123b81f89bd80f788e4bcf1cc3f012a32722b8b5be973970ae494ab25948bb"
+    },
+    {
+      "path": "data/source/task2/originals/test.jsonl",
+      "role": "从规范来源转换的原始单候选样本；train尚未移除两条存疑标签",
+      "bytes": 1774343,
+      "sha256": "5028fe023b76d759544f5fcde59a73e8a67e35d817a4e1f872b0643d9297aa53",
+      "records": 790
+    },
+    {
+      "path": "data/source/task2/originals/train.jsonl",
+      "role": "从规范来源转换的原始单候选样本；train尚未移除两条存疑标签",
+      "bytes": 5436946,
+      "sha256": "debda04dd8897646a01b5dc8ac4439153611d30c37f130cce63d2a6cffb8992c",
+      "records": 2444
+    },
+    {
+      "path": "data/source/task2/originals/validation.jsonl",
+      "role": "从规范来源转换的原始单候选样本；train尚未移除两条存疑标签",
+      "bytes": 1607065,
+      "sha256": "465542fa0bb177ddc736d7f82656ea13446d76a08fdabcc92d341b469bb52146",
+      "records": 730
+    },
+    {
+      "path": "data/source/task2/raw/test_task2_ar_f1.json",
+      "role": "官方Task 2原始数据视图；只有英语f1作为当前规范来源",
+      "bytes": 4851995,
+      "sha256": "f3bf939e8d443433d0fbf978e94f28b0ac5938b0c9941966bbf4f3de0f3b3c2f"
+    },
+    {
+      "path": "data/source/task2/raw/test_task2_de_f1.json",
+      "role": "官方Task 2原始数据视图；只有英语f1作为当前规范来源",
+      "bytes": 4458169,
+      "sha256": "9c599bf2d06eb933c2337036ab3302a882e1bf16553b849e12f583913bf57f00"
+    },
+    {
+      "path": "data/source/task2/raw/test_task2_en_f1.json",
+      "role": "官方Task 2原始数据视图；只有英语f1作为当前规范来源",
+      "bytes": 4038868,
+      "sha256": "5e5402bafdae2ed2c63d6688e161c9e4af8028f596da30dd26b33a3544846b17"
+    },
+    {
+      "path": "data/source/task2/raw/test_task2_en_f2.json",
+      "role": "官方Task 2原始数据视图；只有英语f1作为当前规范来源",
+      "bytes": 4538221,
+      "sha256": "e415f92cc3aafee76ba22cda10a0046fff2b38573e8f02b9d17127e0e178155e"
+    },
+    {
+      "path": "data/source/task2/raw/test_task2_en_f3.json",
+      "role": "官方Task 2原始数据视图；只有英语f1作为当前规范来源",
+      "bytes": 4753136,
+      "sha256": "f63c15a3386d378bb467ae357b3225f98a8216304770ce328f310abb7c8b538e"
+    },
+    {
+      "path": "data/source/task2/raw/test_task2_es_f1.json",
+      "role": "官方Task 2原始数据视图；只有英语f1作为当前规范来源",
+      "bytes": 4302522,
+      "sha256": "e62be14d2cce19a8fbd9079e428d660d6aa7e6cb673db4dc80c9f4f453814632"
+    },
+    {
+      "path": "data/source/task2/raw/test_task2_fr_f1.json",
+      "role": "官方Task 2原始数据视图；只有英语f1作为当前规范来源",
+      "bytes": 4509517,
+      "sha256": "b0183bbaefdc71c3add09bbb365b7b54ce88ce5caf366aa6f0d766b6acf7d80d"
+    },
+    {
+      "path": "data/source/task2/raw/test_task2_hi_f1.json",
+      "role": "官方Task 2原始数据视图；只有英语f1作为当前规范来源",
+      "bytes": 6490452,
+      "sha256": "47d35b3559f67c5d02e6c85f4c43d4da1fcd78fbc45c74019f2bc33d21bded6d"
+    },
+    {
+      "path": "data/source/task2/raw/test_task2_zh_f1.json",
+      "role": "官方Task 2原始数据视图；只有英语f1作为当前规范来源",
+      "bytes": 4046581,
+      "sha256": "510087f41601a8a2950bb4341bf9e2415de2494efead9d42de39a1a4eac64617"
+    },
+    {
+      "path": "data/source/task2/splits/en_f1_seed_20261002.json",
+      "role": "按orig_conv_id冻结的项目划分，seed=20261002",
+      "bytes": 11472,
+      "sha256": "da42c0cbe78ff8bcf4662b6da73eea7c1a8c98bfe44dcda2d722f8b963822dcf"
+    },
+    {
+      "path": "data/training/task2-v1/manifest.json",
+      "role": "最终训练协议、输入来源哈希、排除项和四个分区的统计/哈希",
+      "bytes": 5994,
+      "sha256": "1e0c6edd9da709a5332e1e733bfb984e24cf3bd51d897ca3de61abf9c6c3e1a4"
+    },
+    {
+      "path": "data/training/task2-v1/test.jsonl",
+      "role": "冻结测试集：790条原始样本；选模后显式评估",
+      "bytes": 1774343,
+      "sha256": "5028fe023b76d759544f5fcde59a73e8a67e35d817a4e1f872b0643d9297aa53",
+      "records": 790
+    },
+    {
+      "path": "data/training/task2-v1/train.jsonl",
+      "role": "当前混合训练集：2442条原始+4785条合成",
+      "bytes": 19066007,
+      "sha256": "18f4eb50106f45a1255a4ed7b1f8f5b3bae2e03e3f2d4983e4a5c2378d5426c0",
+      "records": 7227
+    },
+    {
+      "path": "data/training/task2-v1/train_original.jsonl",
+      "role": "原始样本基线训练集：2442条",
+      "bytes": 5432622,
+      "sha256": "6160ec7768982ada1246156640cb8ad1a2ba7852d0f8c19fe5139460d62ec1b7",
+      "records": 2442
+    },
+    {
+      "path": "data/training/task2-v1/validation.jsonl",
+      "role": "冻结验证集：730条原始样本",
+      "bytes": 1607065,
+      "sha256": "465542fa0bb177ddc736d7f82656ea13446d76a08fdabcc92d341b469bb52146",
+      "records": 730
+    }
+  ]
+}

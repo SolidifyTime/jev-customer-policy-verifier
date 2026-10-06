@@ -1,0 +1,9 @@
+# Ubuntu 22.04 / Python 3.12 / RTX 4090 / CUDA 12.4.
+# Boot the PyTorch 2.5.1 / CUDA 12.4 image, then create a separate Conda environment.
+# Preserve the matching CUDA trio while installing LLaMA-Factory dependencies:
+# python -m pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+# python -m pip install -r requirements/autodl-cu124.txt
+-r training.txt
+torch==2.6.0+cu124
+torchvision==0.21.0+cu124
+torchaudio==2.6.0+cu124

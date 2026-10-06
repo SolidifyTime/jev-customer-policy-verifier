@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jev-customer-policy-verifier"
+version = "0.1.0"
+description = "A Jev-based customer-service policy compliance verifier using Qwen3-0.6B"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+cpv = "customer_policy_verifier.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["customer_policy_verifier*"]

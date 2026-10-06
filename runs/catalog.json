@@ -1,0 +1,902 @@
+{
+  "schema": "cpv-run-catalog-v1",
+  "snapshot_date": "2026-10-04",
+  "paths_relative_to": "project root",
+  "artifacts_committed_to_git": false,
+  "current_generation": "runs/generation/bulk-openrouter-20261003-v3",
+  "current_training_status": "LLaMA-Factory0.9.5 / torch2.6.0 / TensorBoard2.21.0 CPU: 108 tests passed; 3 complete epochs, cross-epoch resume, scalar events, selected native model export verified. Default original/mixed budgets: 459/1356 updates. Ubuntu22.04/RTX4090/CUDA12.4 not executed.",
+  "frozen_runs": [
+    {
+      "path": "runs/archive/packages/autodl",
+      "previous_path": "runs/autodl",
+      "category": "archive/packages",
+      "role": "重整目录之前交付的旧AutoDL包",
+      "files": 2,
+      "bytes": 3999630,
+      "key_files": []
+    },
+    {
+      "path": "runs/archive/batch/batch-20261002T044310Z",
+      "previous_path": "runs/batch-20261002T044310Z",
+      "category": "archive/batch",
+      "role": "早期50条批量实验",
+      "files": 197,
+      "bytes": 927174,
+      "key_files": [
+        {
+          "path": "runs/archive/batch/batch-20261002T044310Z/selection.json",
+          "sha256": "c143b986e2df4a9371e9dd55b312823e7c9144caba6f559056ec8f79e1b7779d"
+        },
+        {
+          "path": "runs/archive/batch/batch-20261002T044310Z/summary.json",
+          "sha256": "3d46f875cee48a5117b51e964765da14eee89a7a8a102e373fffb599024ff9db"
+        }
+      ],
+      "summary": {
+        "model": "qwen/qwen3.7-flash",
+        "prompt_version": "pilot-v6",
+        "source_count": 50,
+        "completed_count": 50
+      }
+    },
+    {
+      "path": "runs/archive/bulk-preflight/bulk-openrouter-20261002",
+      "previous_path": "runs/bulk-openrouter-20261002",
+      "category": "archive/bulk-preflight",
+      "role": "全量生成前计划与预检版本；已由v3正式运行取代",
+      "files": 4,
+      "bytes": 4662898,
+      "key_files": [
+        {
+          "path": "runs/archive/bulk-preflight/bulk-openrouter-20261002/plan.json",
+          "sha256": "f50bd65e1a882bbc00f89b6c3a677d8e6b61b0ae728f1d04d0c267d3c8eff764"
+        },
+        {
+          "path": "runs/archive/bulk-preflight/bulk-openrouter-20261002/selection.json",
+          "sha256": "6ad603e16b0d666035873d713be06859cb30bf07b023ccf1542d4e4a440cf122"
+        },
+        {
+          "path": "runs/archive/bulk-preflight/bulk-openrouter-20261002/summary.json",
+          "sha256": "156181edb922fba4a79f5e0f0aafd2dc0d5c2c341c16c062a9fc4816c24e4dab"
+        }
+      ],
+      "summary": {
+        "model": "qwen/qwen3.7-flash",
+        "prompt_version": "bulk-v1/pilot-v10/multi-v3",
+        "status": "prepared_awaiting_user_confirmation",
+        "completed_count": 0
+      }
+    },
+    {
+      "path": "runs/archive/bulk-preflight/bulk-openrouter-20261003",
+      "previous_path": "runs/bulk-openrouter-20261003",
+      "category": "archive/bulk-preflight",
+      "role": "全量生成前计划与预检版本；已由v3正式运行取代",
+      "files": 33,
+      "bytes": 4791926,
+      "key_files": [
+        {
+          "path": "runs/archive/bulk-preflight/bulk-openrouter-20261003/plan.json",
+          "sha256": "6300d8a520838142a6cd9297ff68c58f36de3951e20660e84e93b17658e5a7ef"
+        },
+        {
+          "path": "runs/archive/bulk-preflight/bulk-openrouter-20261003/selection.json",
+          "sha256": "d83723d4769dcba5f4ff2f202a6e468f33f3cb166f48924cdb632e0072c4acd2"
+        },
+        {
+          "path": "runs/archive/bulk-preflight/bulk-openrouter-20261003/summary.json",
+          "sha256": "39755f8a6bb3a7e3359995da77603a4b60b25d5b7ab204056b15d9651326e23e"
+        }
+      ],
+      "summary": {
+        "model": "qwen/qwen3.7-flash",
+        "prompt_version": "bulk-v1/pilot-v10/multi-v3",
+        "status": "partial",
+        "source_count": 2397,
+        "completed_count": 3,
+        "extraction_passed_count": 3,
+        "completed_generations": 9,
+        "generation_status_counts": {
+          "candidate_for_human_review": 9
+        }
+      }
+    },
+    {
+      "path": "runs/archive/bulk-preflight/bulk-openrouter-20261003-v2",
+      "previous_path": "runs/bulk-openrouter-20261003-v2",
+      "category": "archive/bulk-preflight",
+      "role": "全量生成前计划与预检版本；已由v3正式运行取代",
+      "files": 33,
+      "bytes": 4795945,
+      "key_files": [
+        {
+          "path": "runs/archive/bulk-preflight/bulk-openrouter-20261003-v2/plan.json",
+          "sha256": "6300d8a520838142a6cd9297ff68c58f36de3951e20660e84e93b17658e5a7ef"
+        },
+        {
+          "path": "runs/archive/bulk-preflight/bulk-openrouter-20261003-v2/selection.json",
+          "sha256": "570618991fbe11036204a6f29c6a257ec42efdb9466baac155af6f374552b97d"
+        },
+        {
+          "path": "runs/archive/bulk-preflight/bulk-openrouter-20261003-v2/summary.json",
+          "sha256": "9bf0417fbe1b82220d20f2ce5aaa8eeea9c859692880dfb4e34441b5de2ceff2"
+        }
+      ],
+      "summary": {
+        "model": "qwen/qwen3.7-flash",
+        "prompt_version": "bulk-v1/pilot-v11/multi-v3",
+        "status": "partial",
+        "source_count": 2397,
+        "completed_count": 3,
+        "extraction_passed_count": 3,
+        "completed_generations": 9,
+        "generation_status_counts": {
+          "candidate_for_human_review": 7,
+          "rejected_duplicate": 2
+        }
+      }
+    },
+    {
+      "path": "runs/generation/bulk-openrouter-20261003-v3",
+      "previous_path": "runs/bulk-openrouter-20261003-v3",
+      "category": "generation",
+      "role": "当前全量合成运行；关联data/derived/bulk-openrouter-20261003-v3及正式训练集",
+      "files": 19330,
+      "bytes": 102724007,
+      "key_files": [
+        {
+          "path": "runs/generation/bulk-openrouter-20261003-v3/completion-audit.json",
+          "sha256": "26c7f5e59b3829df619032e47817a8c31732d20b852b5c91d4eb20c1dbc5366b"
+        },
+        {
+          "path": "runs/generation/bulk-openrouter-20261003-v3/plan.json",
+          "sha256": "6300d8a520838142a6cd9297ff68c58f36de3951e20660e84e93b17658e5a7ef"
+        },
+        {
+          "path": "runs/generation/bulk-openrouter-20261003-v3/selection.json",
+          "sha256": "f170d84d9e199d43541e0390716bf9b2fc42d17716d33753e5ca8463d55cd26b"
+        },
+        {
+          "path": "runs/generation/bulk-openrouter-20261003-v3/summary.json",
+          "sha256": "d76c3c8869a7b3c2134ef0696496c709bf5f68fa663c349a8a1ad39d2cb655a9"
+        }
+      ],
+      "summary": {
+        "model": "qwen/qwen3.7-flash",
+        "prompt_version": "bulk-v1/pilot-v12/multi-v3",
+        "status": "completed",
+        "source_count": 2397,
+        "completed_count": 2397,
+        "extraction_passed_count": 2022,
+        "completed_generations": 6066,
+        "generation_status_counts": {
+          "candidate_for_human_review": 4788,
+          "rejected_format": 1163,
+          "rejected_duplicate": 115
+        }
+      }
+    },
+    {
+      "path": "runs/archive/expansion/expand-20261002T051032Z",
+      "previous_path": "runs/expand-20261002T051032Z",
+      "category": "archive/expansion",
+      "role": "早期多变体生成试验",
+      "files": 91,
+      "bytes": 604818,
+      "key_files": [
+        {
+          "path": "runs/archive/expansion/expand-20261002T051032Z/selection.json",
+          "sha256": "8f2a69b07f45713fd0bba351ceceedcde2480837c1f0f0335c4705bdcdff5457"
+        },
+        {
+          "path": "runs/archive/expansion/expand-20261002T051032Z/summary.json",
+          "sha256": "40a3c4232a24e9770370c5cefa245fccb897949b4528ce81086147b6d51b61a9"
+        }
+      ],
+      "summary": {
+        "model": "qwen/qwen3.7-flash",
+        "prompt_version": "multi-v1",
+        "completed_generations": 44
+      }
+    },
+    {
+      "path": "runs/archive/expansion/expand-20261002T082727Z",
+      "previous_path": "runs/expand-20261002T082727Z",
+      "category": "archive/expansion",
+      "role": "早期多变体生成试验",
+      "files": 27,
+      "bytes": 171431,
+      "key_files": [
+        {
+          "path": "runs/archive/expansion/expand-20261002T082727Z/selection.json",
+          "sha256": "5e40512196ce1dd25424ce5a917d3f28d76c9d84fec42bb561584fb6c0c96f1b"
+        },
+        {
+          "path": "runs/archive/expansion/expand-20261002T082727Z/summary.json",
+          "sha256": "be8e2d0793e7081bdb23dbaf43c4fc3f69344d2d637d36be57c75226519a0ab2"
+        }
+      ],
+      "summary": {
+        "model": "qwen/qwen3.7-flash",
+        "prompt_version": "multi-v2",
+        "completed_generations": 12
+      }
+    },
+    {
+      "path": "runs/archive/expansion/expand-20261002T082954Z",
+      "previous_path": "runs/expand-20261002T082954Z",
+      "category": "archive/expansion",
+      "role": "早期多变体生成试验",
+      "files": 27,
+      "bytes": 188282,
+      "key_files": [
+        {
+          "path": "runs/archive/expansion/expand-20261002T082954Z/selection.json",
+          "sha256": "f18e011ca52e9032f92ce850a1344ae2f69a4ec995d01ed730fd6f5beb1ce30e"
+        },
+        {
+          "path": "runs/archive/expansion/expand-20261002T082954Z/summary.json",
+          "sha256": "77a33c1059b652aeeb25ddecd3ea2a42ebbf5c822a69f427debf2115cae119e6"
+        }
+      ],
+      "summary": {
+        "model": "qwen/qwen3.7-flash",
+        "prompt_version": "multi-v3",
+        "completed_generations": 12
+      }
+    },
+    {
+      "path": "runs/archive/extraction/extract-v7-20261002T080443Z",
+      "previous_path": "runs/extract-v7-20261002T080443Z",
+      "category": "archive/extraction",
+      "role": "提取prompt版本试验",
+      "files": 12,
+      "bytes": 61525,
+      "key_files": [
+        {
+          "path": "runs/archive/extraction/extract-v7-20261002T080443Z/selection.json",
+          "sha256": "3f8c78714f1e8f20c5f36e2885aead91552704ca9467a757e9251b056adda85a"
+        },
+        {
+          "path": "runs/archive/extraction/extract-v7-20261002T080443Z/summary.json",
+          "sha256": "581f67124e39584e2cb1569bb31cbc35d3a915c2e01bfa2416303aa250b943fa"
+        }
+      ],
+      "summary": {
+        "model": "qwen/qwen3.7-flash",
+        "prompt_version": "pilot-v7",
+        "source_count": 5,
+        "completed_count": 5
+      }
+    },
+    {
+      "path": "runs/archive/extraction/extract-v8-20261002T080904Z",
+      "previous_path": "runs/extract-v8-20261002T080904Z",
+      "category": "archive/extraction",
+      "role": "提取prompt版本试验",
+      "files": 12,
+      "bytes": 64005,
+      "key_files": [
+        {
+          "path": "runs/archive/extraction/extract-v8-20261002T080904Z/selection.json",
+          "sha256": "8883aebc0839ca4163d425b06e5518eac2dfaf33036ea9c6416061cd79655701"
+        },
+        {
+          "path": "runs/archive/extraction/extract-v8-20261002T080904Z/summary.json",
+          "sha256": "f1da016a24001ec9c48eb0d77c281a58085c49e5c6692a7c7b092a6025d1beeb"
+        }
+      ],
+      "summary": {
+        "model": "qwen/qwen3.7-flash",
+        "prompt_version": "pilot-v8",
+        "source_count": 5,
+        "completed_count": 5
+      }
+    },
+    {
+      "path": "runs/training/audits/jev-input-audit-20261003.json",
+      "previous_path": "runs/jev-input-audit-20261003.json",
+      "category": "training/audits",
+      "role": "历史 AgentJev 方案：真实Qwen tokenizer输入长度审计；没有进行完整模型训练；不适用于当前 Direct 协议",
+      "files": 1,
+      "bytes": 472,
+      "key_files": [
+        {
+          "path": "runs/training/audits/jev-input-audit-20261003.json",
+          "sha256": "1a7af94b22186f833a777309e28e9e7e11732066218db1d31d575ebebf248a26"
+        }
+      ]
+    },
+    {
+      "path": "runs/training/audits/jev-input-audit-upstream-format-20261003.json",
+      "previous_path": "runs/jev-input-audit-upstream-format-20261003.json",
+      "category": "training/audits",
+      "role": "历史 AgentJev 方案：真实Qwen tokenizer输入长度审计；没有进行完整模型训练；不适用于当前 Direct 协议",
+      "files": 1,
+      "bytes": 472,
+      "key_files": [
+        {
+          "path": "runs/training/audits/jev-input-audit-upstream-format-20261003.json",
+          "sha256": "25cb37f757e651153bac95b9e20525b9e5047ae5f8c250df96d1c1a67439d7a5"
+        }
+      ]
+    },
+    {
+      "path": "runs/training/smoke/jev-local-smoke-20261003",
+      "previous_path": "runs/jev-local-smoke-20261003",
+      "category": "training/smoke",
+      "role": "历史 AgentJev 方案：本地tiny随机模型训练/保存重载检查，不能作为真实Qwen训练指标；不适用于当前 Direct 协议",
+      "files": 6,
+      "bytes": 88107,
+      "key_files": [
+        {
+          "path": "runs/training/smoke/jev-local-smoke-20261003/initial_validation.json",
+          "sha256": "6054272bcd2d0b7f815cb5db738dc292d52da4cc83dba94efeb4bd80000c64e5"
+        },
+        {
+          "path": "runs/training/smoke/jev-local-smoke-20261003/reload_check.json",
+          "sha256": "fbaf1a8cf1b4ff03500f23474b8e92f47224b9c31463921650d36ce746ef0590"
+        },
+        {
+          "path": "runs/training/smoke/jev-local-smoke-20261003/run.json",
+          "sha256": "b645565ccc771ff872a690447eb16a148c4f18c39842ea480c99e1912cfda650"
+        },
+        {
+          "path": "runs/training/smoke/jev-local-smoke-20261003/selection.json",
+          "sha256": "d32f0047a935cbd0045717c6c316b33032fc0efa7d24f718c00dbee7da7fad29"
+        }
+      ]
+    },
+    {
+      "path": "runs/archive/api-probes/kunyou-chat-probe-20261002T091856Z",
+      "previous_path": "runs/kunyou-chat-probe-20261002T091856Z",
+      "category": "archive/api-probes",
+      "role": "供应商接口兼容性探测记录",
+      "files": 2,
+      "bytes": 340,
+      "key_files": []
+    },
+    {
+      "path": "runs/archive/api-probes/kunyou-curl-probe-20261002T092046Z",
+      "previous_path": "runs/kunyou-curl-probe-20261002T092046Z",
+      "category": "archive/api-probes",
+      "role": "供应商接口兼容性探测记录",
+      "files": 5,
+      "bytes": 4939,
+      "key_files": [
+        {
+          "path": "runs/archive/api-probes/kunyou-curl-probe-20261002T092046Z/summary.json",
+          "sha256": "81fdbe3080817f771cb670c67891b4de52c5b04134d25824bdda8bf7a4f32dfc"
+        }
+      ],
+      "summary": {}
+    },
+    {
+      "path": "runs/archive/api-probes/kunyou-probe-20261002T091047Z",
+      "previous_path": "runs/kunyou-probe-20261002T091047Z",
+      "category": "archive/api-probes",
+      "role": "供应商接口兼容性探测记录",
+      "files": 1,
+      "bytes": 800,
+      "key_files": []
+    },
+    {
+      "path": "runs/reviews/manual-review-20261002",
+      "previous_path": "runs/manual-review-20261002",
+      "category": "reviews",
+      "role": "早期人工审核工作表；结论导入data/archive/reviews",
+      "files": 2,
+      "bytes": 231247,
+      "key_files": []
+    },
+    {
+      "path": "runs/archive/pilot/pilot-20261002T042024Z",
+      "previous_path": "runs/pilot-20261002T042024Z",
+      "category": "archive/pilot",
+      "role": "早期两条样本串行管线尝试",
+      "files": 3,
+      "bytes": 12409,
+      "key_files": [
+        {
+          "path": "runs/archive/pilot/pilot-20261002T042024Z/selection.json",
+          "sha256": "4626d719ad75bef70c0ffe32c8d48a3de4c63e7cacc32c6b78d5e84df53a2c25"
+        }
+      ]
+    },
+    {
+      "path": "runs/archive/pilot/pilot-20261002T042210Z",
+      "previous_path": "runs/pilot-20261002T042210Z",
+      "category": "archive/pilot",
+      "role": "早期两条样本串行管线尝试",
+      "files": 6,
+      "bytes": 17803,
+      "key_files": [
+        {
+          "path": "runs/archive/pilot/pilot-20261002T042210Z/selection.json",
+          "sha256": "4626d719ad75bef70c0ffe32c8d48a3de4c63e7cacc32c6b78d5e84df53a2c25"
+        },
+        {
+          "path": "runs/archive/pilot/pilot-20261002T042210Z/summary.json",
+          "sha256": "7d59f7fa048c8d5a867270700bbf2d0462ee98c744d5d11ac9b414d7f6280555"
+        }
+      ],
+      "summary": {
+        "model": "qwen/qwen3-32b",
+        "prompt_version": "pilot-v1"
+      }
+    },
+    {
+      "path": "runs/archive/pilot/pilot-20261002T042420Z",
+      "previous_path": "runs/pilot-20261002T042420Z",
+      "category": "archive/pilot",
+      "role": "早期两条样本串行管线尝试",
+      "files": 18,
+      "bytes": 51878,
+      "key_files": [
+        {
+          "path": "runs/archive/pilot/pilot-20261002T042420Z/selection.json",
+          "sha256": "d7033b3428c69f1c45be056a6df3d2f1bc7f5cc1e78aac41c4f894edacf3731b"
+        },
+        {
+          "path": "runs/archive/pilot/pilot-20261002T042420Z/summary.json",
+          "sha256": "b169eff1fa470fe32271bd53dd5633a326519899f8aacf7ae5ecefa5d4f82963"
+        }
+      ],
+      "summary": {
+        "model": "qwen/qwen3-32b",
+        "prompt_version": "pilot-v2"
+      }
+    },
+    {
+      "path": "runs/archive/pilot/pilot-20261002T043009Z",
+      "previous_path": "runs/pilot-20261002T043009Z",
+      "category": "archive/pilot",
+      "role": "早期两条样本串行管线尝试",
+      "files": 3,
+      "bytes": 11587,
+      "key_files": [
+        {
+          "path": "runs/archive/pilot/pilot-20261002T043009Z/selection.json",
+          "sha256": "73f6d6aa3da526930945f80eaa6abc4b709b0aa1d0f330eaf2293134aabd30f8"
+        }
+      ]
+    },
+    {
+      "path": "runs/archive/pilot/pilot-20261002T043013Z",
+      "previous_path": "runs/pilot-20261002T043013Z",
+      "category": "archive/pilot",
+      "role": "早期两条样本串行管线尝试",
+      "files": 4,
+      "bytes": 11672,
+      "key_files": [
+        {
+          "path": "runs/archive/pilot/pilot-20261002T043013Z/selection.json",
+          "sha256": "73f6d6aa3da526930945f80eaa6abc4b709b0aa1d0f330eaf2293134aabd30f8"
+        },
+        {
+          "path": "runs/archive/pilot/pilot-20261002T043013Z/summary.json",
+          "sha256": "2d05e3cf41c3969414f8ec77da245f67a4ade8d4dadb88224ee616f2503978c0"
+        }
+      ],
+      "summary": {
+        "model": "qwen/qwen3.7-flash",
+        "prompt_version": "pilot-v3"
+      }
+    },
+    {
+      "path": "runs/archive/pilot/pilot-20261002T043126Z",
+      "previous_path": "runs/pilot-20261002T043126Z",
+      "category": "archive/pilot",
+      "role": "早期两条样本串行管线尝试",
+      "files": 8,
+      "bytes": 28022,
+      "key_files": [
+        {
+          "path": "runs/archive/pilot/pilot-20261002T043126Z/selection.json",
+          "sha256": "c5e32b30fecac2d0f82a6284dcc553ed3ca846e86c40a20e33f9f2c4f4571076"
+        },
+        {
+          "path": "runs/archive/pilot/pilot-20261002T043126Z/summary.json",
+          "sha256": "7b07c60c227006cc9ebf269c889a8e6dbc8e12365c5e0ed3c33771f922768fce"
+        }
+      ],
+      "summary": {
+        "model": "qwen/qwen3.7-flash",
+        "prompt_version": "pilot-v4"
+      }
+    },
+    {
+      "path": "runs/archive/pilot/pilot-20261002T043353Z",
+      "previous_path": "runs/pilot-20261002T043353Z",
+      "category": "archive/pilot",
+      "role": "早期两条样本串行管线尝试",
+      "files": 20,
+      "bytes": 65510,
+      "key_files": [
+        {
+          "path": "runs/archive/pilot/pilot-20261002T043353Z/selection.json",
+          "sha256": "20c6673c4f8a446c568c05bd8bb41d649291646924fcc6adf8ea543f8b48d504"
+        },
+        {
+          "path": "runs/archive/pilot/pilot-20261002T043353Z/summary.json",
+          "sha256": "f1f3ebddcc1e9a0b8a7124be09be8e2cfd4f83070eb7be7e2f3bb099d6942206"
+        }
+      ],
+      "summary": {
+        "model": "qwen/qwen3.7-flash",
+        "prompt_version": "pilot-v5"
+      }
+    },
+    {
+      "path": "runs/archive/pilot/pilot-20261002T043719Z",
+      "previous_path": "runs/pilot-20261002T043719Z",
+      "category": "archive/pilot",
+      "role": "早期两条样本串行管线尝试",
+      "files": 3,
+      "bytes": 10221,
+      "key_files": [
+        {
+          "path": "runs/archive/pilot/pilot-20261002T043719Z/selection.json",
+          "sha256": "8b355985dc323567c460040b526c1ca454817421387798e0d737905336c1844f"
+        }
+      ]
+    },
+    {
+      "path": "runs/archive/misc/tilde-directory",
+      "previous_path": "~.",
+      "category": "archive/misc",
+      "role": "历史空目录等杂项保留",
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "path": "runs/archive/packages/agentjev-v1",
+      "category": "archive/packages",
+      "role": "SemIf Direct 切换前的 AgentJev 源码与 AutoDL 交付包，字节保留",
+      "files": 4,
+      "bytes": 4288813,
+      "key_files": [
+        {
+          "path": "runs/archive/packages/agentjev-v1/autodl/customer-policy-verifier-training.tar.gz.manifest.json",
+          "sha256": "8ac7eb3c973feff6661bcfea9d68789e1bf52f9601f8423c280d8a7af84eb87f"
+        },
+        {
+          "path": "runs/archive/packages/agentjev-v1/github/customer-policy-verifier-source.tar.gz.manifest.json",
+          "sha256": "01a2d4cff51313b0f5b6869d4fd24d2d9e189fe860b71146f29792c7af4daa1f"
+        }
+      ]
+    },
+    {
+      "path": "runs/training/audits/semif-direct-input-20261003.json",
+      "category": "training/audits",
+      "role": "当前 Direct 提示格式的真实 Qwen tokenizer 长度与槽位审计",
+      "files": 1,
+      "bytes": 1793,
+      "key_files": [
+        {
+          "path": "runs/training/audits/semif-direct-input-20261003.json",
+          "sha256": "2ab540d02a6b822bc10a639a0ba385bcd7077f492297e2a313f0b47f85460022"
+        }
+      ]
+    },
+    {
+      "path": "runs/training/smoke/semif-direct-local-smoke-20261003",
+      "category": "training/smoke",
+      "role": "历史 SemIf Direct / PyTorch2.8 tiny 小试，采用旧.pt格式；保留当时结果",
+      "files": 6,
+      "bytes": 65740,
+      "key_files": [
+        {
+          "path": "runs/training/smoke/semif-direct-local-smoke-20261003/initial_validation.json",
+          "sha256": "2b1f116c394622ecbb3243ddfef6a63d81a5064f78c7a1d80a87d85524de22d7"
+        },
+        {
+          "path": "runs/training/smoke/semif-direct-local-smoke-20261003/reload_check.json",
+          "sha256": "265d0c58e9d31a3d7c6f83c8eff07927763b946a5b8669612d8139f3afb115db"
+        },
+        {
+          "path": "runs/training/smoke/semif-direct-local-smoke-20261003/run.json",
+          "sha256": "49470adbb35514641c41fd2198d2c06d9a62c2af297e06fd63ea0218cbdd4a30"
+        },
+        {
+          "path": "runs/training/smoke/semif-direct-local-smoke-20261003/selection.json",
+          "sha256": "466808711c3a58987913f2115aa6acb5fe27ed9db824c02018bbf808d920a7d5"
+        }
+      ]
+    },
+    {
+      "path": "runs/archive/packages/semif-direct-torch28-v1",
+      "category": "archive/packages",
+      "role": "本次固定2.5.1环境前的 SemIf Direct / Torch2.8 / .pt 保存格式交付包",
+      "files": 4,
+      "bytes": 4319212,
+      "key_files": [
+        {
+          "path": "runs/archive/packages/semif-direct-torch28-v1/autodl/customer-policy-verifier-training.tar.gz.manifest.json",
+          "sha256": "e9bad41a2427efc55c7729367fa1e0cf87c52dc5f085ef6c4828b8069c014c72"
+        },
+        {
+          "path": "runs/archive/packages/semif-direct-torch28-v1/github/customer-policy-verifier-source.tar.gz.manifest.json",
+          "sha256": "c62da796317797219ebd2f95636e23f527756104b50cba3073c1f329b32d473a"
+        }
+      ]
+    },
+    {
+      "path": "runs/training/audits/semif-direct-torch251-input-20261003.json",
+      "category": "training/audits",
+      "role": "当前固定tokenizers0.22.1真实Qwen tokenizer输入审计，无截断",
+      "files": 1,
+      "bytes": 1793,
+      "key_files": [
+        {
+          "path": "runs/training/audits/semif-direct-torch251-input-20261003.json",
+          "sha256": "2ab540d02a6b822bc10a639a0ba385bcd7077f492297e2a313f0b47f85460022"
+        }
+      ]
+    },
+    {
+      "path": "runs/training/smoke/semif-direct-torch251-smoke-20261003",
+      "category": "training/smoke",
+      "role": "历史PyTorch2.5.1随机tiny全参数训练及safetensors重载通过，CPU流程验证",
+      "files": 6,
+      "bytes": 63329,
+      "key_files": [
+        {
+          "path": "runs/training/smoke/semif-direct-torch251-smoke-20261003/initial_validation.json",
+          "sha256": "3002bbf3550f22705786cbd2a90a5e23f674e97f1e85032cf230616aa2012e82"
+        },
+        {
+          "path": "runs/training/smoke/semif-direct-torch251-smoke-20261003/reload_check.json",
+          "sha256": "889d7292e57bdacea8fe6c61ccc48e4cdc1cf5f7d2f2591530887e5b3c1ae9ec"
+        },
+        {
+          "path": "runs/training/smoke/semif-direct-torch251-smoke-20261003/run.json",
+          "sha256": "176079a63fbb981dc86eeaba4bc3b2848c7d252731f98dbced24cc8af18a9bab"
+        },
+        {
+          "path": "runs/training/smoke/semif-direct-torch251-smoke-20261003/selection.json",
+          "sha256": "8ec5161f0047ee73dc9eca0b7944bceec5ec05767ad07dd9e46b401c2fe1ed56"
+        }
+      ]
+    },
+    {
+      "path": "runs/archive/packages/semif-direct-huggingface-v1",
+      "category": "archive/packages",
+      "role": "ModelScope适配之前的HF下载版本源码与AutoDL包，保留原字节",
+      "files": 4,
+      "bytes": 4344666,
+      "key_files": [
+        {
+          "path": "runs/archive/packages/semif-direct-huggingface-v1/github/customer-policy-verifier-source.tar.gz.manifest.json",
+          "sha256": "11a518eec5d487a799af0fccc7f1d6a7c9a37623c6c6557ab2a3c4cd2c9bcd4e"
+        },
+        {
+          "path": "runs/archive/packages/semif-direct-huggingface-v1/autodl/customer-policy-verifier-training.tar.gz.manifest.json",
+          "sha256": "7bbd16490e1db2ee195b5b4ddae048fa5428e12ff3fd15e4e726af1f90fbeff5"
+        }
+      ]
+    },
+    {
+      "path": "runs/training/audits/semif-direct-modelscope-latest-input-20261004.json",
+      "category": "training/audits",
+      "role": "ModelScope当前tokenizer的完全离线Direct输入审计，未锁定模型文件哈希",
+      "files": 1,
+      "bytes": 1793,
+      "key_files": [
+        {
+          "path": "runs/training/audits/semif-direct-modelscope-latest-input-20261004.json",
+          "sha256": "a938cc7c906327a9eed1723d000453611eb450a2d727213fff1a9a345e0021dc"
+        }
+      ]
+    },
+    {
+      "path": "runs/archive/packages/semif-direct-modelscope-torch251-v1",
+      "category": "archive/packages",
+      "role": "LLaMA-Factory 接入前 ModelScope / torch2.5.1 手写训练交付包",
+      "files": 4,
+      "bytes": 4357692,
+      "key_files": [
+        {
+          "path": "runs/archive/packages/semif-direct-modelscope-torch251-v1/autodl/customer-policy-verifier-training.tar.gz",
+          "sha256": "2d1a07e6fd8e6247ff40e0769e54f1307d1b5975da1564d49d669875e2bc31ae"
+        },
+        {
+          "path": "runs/archive/packages/semif-direct-modelscope-torch251-v1/autodl/customer-policy-verifier-training.tar.gz.manifest.json",
+          "sha256": "2a164693759ff4b82a48f4ed858c8ea4bb20867938a7ab5ce0b5cbd19009734f"
+        },
+        {
+          "path": "runs/archive/packages/semif-direct-modelscope-torch251-v1/github/customer-policy-verifier-source.tar.gz",
+          "sha256": "f60152035a9767a1e72bd454d076f927426732420f176c0453d5b5915b4a603d"
+        },
+        {
+          "path": "runs/archive/packages/semif-direct-modelscope-torch251-v1/github/customer-policy-verifier-source.tar.gz.manifest.json",
+          "sha256": "93738f559314216c38df377c2375860eda60811d02e3beb51f7576124086cf96"
+        }
+      ]
+    },
+    {
+      "path": "runs/training/smoke/llamafactory-direct-cpu-20261004",
+      "category": "training/smoke",
+      "role": "最初框架接入的 torch2.8 四样本两步 CPU 小试，保留当时检查点与标准导出",
+      "files": 33,
+      "bytes": 647665,
+      "key_files": [
+        {
+          "path": "runs/training/smoke/llamafactory-direct-cpu-20261004/reload_check.json",
+          "sha256": "6a468a7b970e1b0c6161305a46b02fa17b9fbaab0cc634eb92e3b1b2b87e8c45"
+        },
+        {
+          "path": "runs/training/smoke/llamafactory-direct-cpu-20261004/run.json",
+          "sha256": "04a0f6bb310569775214f85b20638be828479b811633361214888c35a3af8ae1"
+        },
+        {
+          "path": "runs/training/smoke/llamafactory-direct-cpu-20261004/selection.json",
+          "sha256": "44aea68283c81a7ae45dd68e35281ed038fd5be76b3886025daabe0ba339508a"
+        }
+      ]
+    },
+    {
+      "path": "runs/training/audits/llamafactory-direct-input-20261004.json",
+      "category": "training/audits",
+      "role": "最初框架接入的真实 tokenizer 无 HTTP 审计，当前沿用相同输入协议与 tokenizers 版本",
+      "files": 1,
+      "bytes": 1793,
+      "key_files": [
+        {
+          "path": "runs/training/audits/llamafactory-direct-input-20261004.json",
+          "sha256": "a938cc7c906327a9eed1723d000453611eb450a2d727213fff1a9a345e0021dc"
+        }
+      ]
+    },
+    {
+      "path": "runs/archive/packages/llamafactory-direct-torch280-cu128-v1",
+      "category": "archive/packages",
+      "role": "此前 LLaMA-Factory / torch2.8.0 / cu128 源码与 AutoDL 交付包，原始字节保留",
+      "files": 4,
+      "bytes": 4371554,
+      "key_files": [
+        {
+          "path": "runs/archive/packages/llamafactory-direct-torch280-cu128-v1/github/customer-policy-verifier-source.tar.gz",
+          "sha256": "1f157f643dbee6c2a64a66492eff68af97318e4ef21268943e3ac5b3f029ae6a"
+        },
+        {
+          "path": "runs/archive/packages/llamafactory-direct-torch280-cu128-v1/github/customer-policy-verifier-source.tar.gz.manifest.json",
+          "sha256": "ea41a404ce9d4556fb79a259223b3406cc360ac0dc9247641814463506ce080e"
+        },
+        {
+          "path": "runs/archive/packages/llamafactory-direct-torch280-cu128-v1/autodl/customer-policy-verifier-training.tar.gz",
+          "sha256": "bedb52363cbdd52e1ff7341cc609dcc55102a5663e58ea77c1c4221dd0a1aa27"
+        },
+        {
+          "path": "runs/archive/packages/llamafactory-direct-torch280-cu128-v1/autodl/customer-policy-verifier-training.tar.gz.manifest.json",
+          "sha256": "eddd0be242da5686d9e5d987f474093fa6bc304e840dbd019255c856f9a75c9a"
+        }
+      ]
+    },
+    {
+      "path": "runs/training/smoke/llamafactory-direct-torch260-cpu-20261004",
+      "category": "training/smoke",
+      "role": "三轮训练与 TensorBoard 启用前的 torch2.6 四样本两步 CPU 小试，保留当时检查点与标准导出",
+      "files": 33,
+      "bytes": 644364,
+      "key_files": [
+        {
+          "path": "runs/training/smoke/llamafactory-direct-torch260-cpu-20261004/run.json",
+          "sha256": "098a760587b03cdc83629d2d57502500768080bb99a88891a3a1e56381bb34bd"
+        },
+        {
+          "path": "runs/training/smoke/llamafactory-direct-torch260-cpu-20261004/selection.json",
+          "sha256": "537420fa06d60dd78c1f27e4fd15326d082c9bfb8ce10869bfbbc48d26c9555f"
+        },
+        {
+          "path": "runs/training/smoke/llamafactory-direct-torch260-cpu-20261004/reload_check.json",
+          "sha256": "6a468a7b970e1b0c6161305a46b02fa17b9fbaab0cc634eb92e3b1b2b87e8c45"
+        }
+      ]
+    },
+    {
+      "path": "runs/archive/packages/llamafactory-direct-torch260-cu124-steps600-v1",
+      "category": "archive/packages",
+      "role": "三轮训练与 TensorBoard 启用前的 torch2.6 / cu124 / 600 步交付包及原始清单，字节保留",
+      "files": 4,
+      "bytes": 4380503,
+      "key_files": [
+        {
+          "path": "runs/archive/packages/llamafactory-direct-torch260-cu124-steps600-v1/autodl/customer-policy-verifier-training.tar.gz",
+          "sha256": "73b0133e587094886ed1f590a982248a55c8e2afd1e230fcd60aa6a32d9f14d8"
+        },
+        {
+          "path": "runs/archive/packages/llamafactory-direct-torch260-cu124-steps600-v1/autodl/customer-policy-verifier-training.tar.gz.manifest.json",
+          "sha256": "05cc4fe8da8485222bd05fccfc1e7b38848021d4a5c130059d4676c6ce369551"
+        },
+        {
+          "path": "runs/archive/packages/llamafactory-direct-torch260-cu124-steps600-v1/github/customer-policy-verifier-source.tar.gz",
+          "sha256": "9c4038e553ef7d1b2a5fc45a24f9192f9eb9c6f10d64d1eb4773cfc342e8d8db"
+        },
+        {
+          "path": "runs/archive/packages/llamafactory-direct-torch260-cu124-steps600-v1/github/customer-policy-verifier-source.tar.gz.manifest.json",
+          "sha256": "22d1e54fd46eb9a971c30dda6628f63cae8a62608a10783f825b5e42c9b1909f"
+        }
+      ]
+    },
+    {
+      "path": "runs/training/smoke/llamafactory-direct-tensorboard-cpu-20261004",
+      "category": "training/smoke",
+      "role": "当前 TensorBoard / torch2.6 四样本两步 CPU 流程，事件、重载与原生导出通过；未评测测试集",
+      "files": 34,
+      "bytes": 653729,
+      "key_files": [
+        {
+          "path": "runs/training/smoke/llamafactory-direct-tensorboard-cpu-20261004/run.json",
+          "sha256": "1a790d78acfdda55494ed8141056a0f800c97eb27f0a3603a547d36bd35c72fd"
+        },
+        {
+          "path": "runs/training/smoke/llamafactory-direct-tensorboard-cpu-20261004/selection.json",
+          "sha256": "e80dd30ca1ae9e64c76d2845ade0c45dd0c325ca9ab1aa3c5ee7bbc177efa408"
+        },
+        {
+          "path": "runs/training/smoke/llamafactory-direct-tensorboard-cpu-20261004/reload_check.json",
+          "sha256": "6a468a7b970e1b0c6161305a46b02fa17b9fbaab0cc634eb92e3b1b2b87e8c45"
+        }
+      ],
+      "summary": {
+        "best_step": 2,
+        "validation_cross_entropy": 0.709540617837132,
+        "checkpoint": "best.safetensors",
+        "checkpoint_sha256": "0ee8e73ed48028758c57a0a4c819fe477792f0d7cfc3507a4ba7aaa587c97b97",
+        "training_backend": "llamafactory",
+        "test_evaluated": false,
+        "threshold": 0.5,
+        "training_seconds": 0.1861068330181297,
+        "peak_cuda_memory_gb": null,
+        "completed_steps": 2,
+        "completed_epochs": 0.5,
+        "training_plan": {
+          "mode": "steps",
+          "num_train_epochs": null,
+          "optimizer_steps": 2,
+          "updates_per_epoch": 4,
+          "questions": 4,
+          "microbatches_per_epoch": 4
+        },
+        "tensorboard_dir": "tensorboard",
+        "export": "export"
+      }
+    }
+  ],
+  "new_output_directories": {
+    "generation": "runs/generation/",
+    "reviews": "runs/reviews/",
+    "training": "runs/training/",
+    "packages": "runs/packages/",
+    "maintenance": "runs/maintenance/"
+  },
+  "current_training_protocol": "customer-policy-semif-direct-v1",
+  "target_gpu_environment": {
+    "gpu": "RTX 4090",
+    "os": "Ubuntu 22.04",
+    "python": "3.12",
+    "torch": "2.6.0+cu124",
+    "cuda_runtime": "12.4",
+    "gpu_runtime_verified": false
+  },
+  "download_source": {
+    "provider": "modelscope",
+    "repo_id": "Qwen/Qwen3-0.6B",
+    "revision": "master",
+    "model_content_pinned": false
+  },
+  "training_backend": {
+    "name": "llamafactory",
+    "version": "0.9.5",
+    "trainer": "DirectTrainer(CustomSeq2SeqTrainer)",
+    "finetuning_type": "full"
+  },
+  "base_image": {
+    "os": "Ubuntu 22.04",
+    "python": "3.12",
+    "torch": "2.5.1",
+    "cuda": "12.4",
+    "training_environment": "separate Conda environment at /root/autodl-tmp/conda/envs/cpv"
+  }
+}

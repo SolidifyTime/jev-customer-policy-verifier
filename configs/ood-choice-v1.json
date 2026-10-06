@@ -1,0 +1,12 @@
+{
+  "version": "ood-choice-v1",
+  "model_repo": "Qwen/Qwen3-0.6B",
+  "seed": 20261004,
+  "max_tokens": 4096,
+  "input_normalization": "lowercase",
+  "attn_implementation": "sdpa",
+  "gradient_checkpointing": false,
+  "device": "cuda",
+  "precision": "bf16",
+  "eval_batch_size": 8
+}

@@ -1,0 +1,14 @@
+{
+  "base": {
+    "sha256": "f47f71177f32bcd101b7573ec9171e6a57f4f4d31148d38e382306f42996874b",
+    "checkpoint": null
+  },
+  "original": {
+    "checkpoint": "/root/cpv-experiments/llamafactory-direct-original-case-neutral-1epoch-v1/best.safetensors",
+    "sha256": "c8b9d16882393b3d06513688817e64a81bb7251ff5fe9767cd6c3bd62197e33e"
+  },
+  "mixed": {
+    "checkpoint": "/root/autodl-tmp/customer-policy-verifier/runs/training/llamafactory-direct-mixed-case-neutral-1epoch-v1/best.safetensors",
+    "sha256": "4a24374a6859c676df663f85848e6807857fccf9d38562c84f663f05f2c6cd27"
+  }
+}

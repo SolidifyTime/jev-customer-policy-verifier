@@ -1,0 +1,33 @@
+# Local credentials
+.env
+.env.*
+!.env.example
+*.key
+
+# Data and run inventories are public; artifacts stay local.
+/data/*
+!/data/README.md
+!/data/catalog.json
+/runs/*
+!/runs/README.md
+!/runs/catalog.json
+checkpoints/
+models/
+wandb/
+*.safetensors
+*.pt
+*.pth
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+build/
+dist/
+*.egg-info/
+
+# macOS metadata
+.DS_Store
